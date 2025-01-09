@@ -12,7 +12,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.DELETE;
 
 @RestController
 @RequestMapping("api/comentarios")
-@CrossOrigin(origins = "*", methods = { GET, PUT, POST, DELETE})
+//@CrossOrigin(origins = "*", methods = { GET, PUT, POST, DELETE})
 public class ComentarioController {
     @Autowired
     private ComentarioService comentarioService;

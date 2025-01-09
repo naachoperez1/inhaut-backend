@@ -16,7 +16,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.DELETE;
 
 @RestController
 @RequestMapping("api/entradas")
-@CrossOrigin(origins = "*", methods = { GET, PUT, POST, DELETE})
+//@CrossOrigin(origins = "*", methods = { GET, PUT, POST, DELETE})
 public class EntradaController {
     @Autowired
     private EntradaService entradaService;

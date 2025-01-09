@@ -8,7 +8,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
 
 @RestController
 @RequestMapping("api/auth")
-@CrossOrigin(origins = "*", methods = { GET, PUT, POST, DELETE})
+//@CrossOrigin(origins = "*", methods = { GET, PUT, POST, DELETE})
 public class AuthController {
 
     @Autowired
