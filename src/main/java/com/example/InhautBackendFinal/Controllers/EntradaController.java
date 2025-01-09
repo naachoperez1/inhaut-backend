@@ -11,8 +11,12 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
+import static org.springframework.web.bind.annotation.RequestMethod.*;
+import static org.springframework.web.bind.annotation.RequestMethod.DELETE;
+
 @RestController
 @RequestMapping("api/entradas")
+@CrossOrigin(origins = "*", methods = { GET, PUT, POST, DELETE})
 public class EntradaController {
     @Autowired
     private EntradaService entradaService;

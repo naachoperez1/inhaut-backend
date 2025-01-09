@@ -4,8 +4,11 @@ import com.example.InhautBackendFinal.Services.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import static org.springframework.web.bind.annotation.RequestMethod.*;
+
 @RestController
 @RequestMapping("api/auth")
+@CrossOrigin(origins = "*", methods = { GET, PUT, POST, DELETE})
 public class AuthController {
 
     @Autowired
